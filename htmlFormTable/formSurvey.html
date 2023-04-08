@@ -7,7 +7,7 @@
     <style>
         body {
 
-            font-family: Helvetica, sans-serif;
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
             font-size: 16px;
             line-height: 1.6;
 
@@ -44,7 +44,7 @@
         }
 
         h2 {
-            margin: 0;
+            margin-bottom: 0;
         }
 
         li {
@@ -55,23 +55,37 @@
         fieldset {
             /* border-style: none; */
             border: none;
-            display: block;
+            /* display: block; */
         }
 
         select {
             /* padding: 20px; */
-            font-size: 25px;
+            font-size: 18px;
             width: 30%;
-            display: block;
+            /* display: block; */
+        }
+
+        .title {
+            /* font-style: bold; */
+            font-weight: bold;
+            /* font-size: 20px; */
         }
 
         form {
             text-align: left;
         }
 
-        .ad {
-            display: block;
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             /* border: ; */
+        }
+
+        textarea {
+            height: 10em;
+            width: 80%;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -90,12 +104,12 @@
                 <div>Please take a few moments to complete this satisfaction survey. </div>
             </header>
             <ul>
-                <li class="">
-                    <label class="">
+                <li>
+                    <label class="title">
                         What is your age range?
                     </label>
                     <div>
-                        <select name="">
+                        <select name="age">
                             <option value="18-24">
                                 18-24
                             </option>
@@ -115,11 +129,11 @@
 
 
                 <li>
-                    <label>
+                    <label class="title">
                         What is your yearly income range?
                     </label>
                     <div>
-                        <select>
+                        <select name="income">
                             <option value="$0 - $25,000">
                                 $0 - $25,000
                             </option>
@@ -137,57 +151,37 @@
                 </li>
 
 
-                <li class="ad">
+                <li>
                     <fieldset>
-                        <!--[if !IE | (gte IE 8)]-->
-                        <legend>
+                        <legend class="title">
                             Gender Identity
                         </legend>
-                        <!--[endif]-->
-                        <!--[if lt IE 8]>
-                <label id="title505" class="desc">
-                    Gender Identity
-                        </label>
-                <![endif]-->
-                        <div>
-                            <input name="" type="hidden" value="">
-                            <span class="">
+
+                        <div class="container">
+                            <span>
                                 <input type="radio" value="Male">
                                 <label>
-                                    <span class="">Male</span>
-                                    <span class="">
-                                    </span>
+                                    <span>Male</span>
                                 </label>
                             </span>
                             <span>
-                                <input type="radio" value="Male">
-                                <label class="">
-                                    <span class="">Female</span>
-                                    <span class="">
-                                    </span>
+                                <input type="radio" value="Famele">
+                                <label>
+                                    <span>Female</span>
                                 </label>
                             </span>
                             <span>
-                                <input type="radio" value="Male">
-                                <label class="choice">
-                                    <span class="">Nonbinary</span>
-                                    <span class="">
-                                    </span>
+                                <input type="radio" value="Nonbinary">
+                                <label>
+                                    <span>Nonbinary</span>
                                 </label>
                             </span>
                             <span>
-                                <input type="radio" value="Male">
-                                <label class="choice" for="Field505_3">
-                                    <span class="">Other</span>
-                                    <span class="">
-                                    </span>
+                                <input type="radio" value="Other">
+                                <label>
+                                    <span>Other</span><br>
                                 </label>
                                 <input type="text" maxlength="250">
-                                <!-- <label>
-                                    Maximum of <var id="rangeMaxMsg505">250</var> characters.&nbsp;&nbsp;&nbsp; <em
-                                        class="currently" style="display: inline;">Currently Used: <var
-                                            id="rangeUsedMsg505">0</var> characters.</em>
-                                </label> -->
                             </span>
                         </div>
                     </fieldset>
@@ -197,40 +191,30 @@
 
                 <li>
                     <fieldset>
-                        <!--[if !IE | (gte IE 8)]-->
-                        <legend>
+
+                        <legend class="title">
                             Which of the following products have your purchased in the last 2 months. Please check all
                             that apply.
                         </legend>
-                        <!--[endif]-->
-                        <!--[if lt IE 8]>
-                <label id="title303" class="desc">
-                    Which of the following products have your purchased in the last 2 months. Please check all that apply.
-                        </label>
-                <![endif]-->
-                        <div>
-                            <span class="subfield">
-                                <input type="checkbox" class="" value="Product 1" tabindex="0">
-                                <label class="choice">
+
+                        <div class="container">
+                            <span>
+                                <input type="checkbox" value="Product 1">
+                                <label>
                                     <span class="">Product 1</span>
-                                    <span class="choice__qty">
-                                    </span>
                                 </label>
                             </span>
-                            <span class="subfield">
-                                <input type="checkbox">
-                                <label class="choice">
-                                    <span class="">Product 2</span>
-                                    <span class="">
-                                    </span>
+                            <span>
+                                <input type="checkbox" value="Product 2">
+                                <label>
+                                    <span>Product 2</span>
+
                                 </label>
                             </span>
-                            <span class="subfield">
-                                <input type="checkbox" class="">
-                                <label class="choice">
-                                    <span class="">Product 3</span>
-                                    <span class="">
-                                    </span>
+                            <span>
+                                <input type="checkbox" value="Product 3">
+                                <label>
+                                    <span>Product 3</span>
                                 </label>
                             </span>
                         </div>
@@ -238,42 +222,28 @@
                 </li>
 
 
-                <li class="">
+                <li>
                     <fieldset>
-                        <!--[if !IE | (gte IE 8)]-->
-                        <legend class="">
+                        <legend class="title">
                             How often would you use our new product?
                         </legend>
-                        <!--[endif]-->
-                        <!--[if lt IE 8]>
-                <label id="title808" class="desc">
-                    How often would you use our new product?
-                        </label>
-                <![endif]-->
-                        <div>
-                            <input name="Field808" type="hidden" value="">
+                        <div class="container">
                             <span>
-                                <input name="" type="radio" class="" value="Daily">
-                                <label class="choice">
-                                    <span class="">Daily</span>
-                                    <span class="choice__qty">
-                                    </span>
+                                <input type="radio" value="Daily">
+                                <label>
+                                    <span>Daily</span>
                                 </label>
                             </span>
                             <span>
-                                <input type="radio" class="" value="">
-                                <label class="choice">
-                                    <span class="">Weekly</span>
-                                    <span class="choice__qty">
-                                    </span>
+                                <input type="radio" value="Weekly">
+                                <label>
+                                    <span>Weekly</span>
                                 </label>
                             </span>
                             <span>
-                                <input type="radio" class="" value="">
-                                <label class="choice">
-                                    <span class="">Monthly</span>
-                                    <span class="choice__qty">
-                                    </span>
+                                <input type="radio" value="Monthly">
+                                <label>
+                                    <span>Monthly</span>
                                 </label>
                             </span>
                         </div>
@@ -282,13 +252,14 @@
 
 
 
-                <li class="">
-                    <label class="desc">
+                <li>
+                    <label class="title">
                         What would you pay for the new product?
-                    </label>
+                    </label><br>
                     <span class="symbol">$</span>
                     <span>
-                        <input type="text" class="" value="" <label>Dollars</label>
+                        <input type="text" value="">
+                        <label>Dollars</label>
                     </span>
                     <span class="">.</span>
                     <span class="cents">
@@ -299,27 +270,24 @@
 
 
 
-                <li id="fo77li806" class="notranslate      ">
+                <li>
 
 
-                    <label class="">
+                    <label class="title">
                         What features would you like to see in the new product.
                     </label>
 
                     <div>
-                        <textarea class="" spellcheck="true"></textarea>
-
+                        <textarea row="10"></textarea>
                     </div>
-
-
 
                 </li>
 
 
 
-                <li class="">
-                    <table cellspacing="0">
-                        <caption id="title403">
+                <li>
+                    <table class="">
+                        <caption>
                             Please rate your level of agreement with the following statements.
                         </caption>
                         <thead>
@@ -332,7 +300,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr role="" class="">
+                            <tr>
                                 <th>
                                     <label>
                                         Our products are priced fairly.

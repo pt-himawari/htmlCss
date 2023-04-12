@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* begin header-logo */
+#main {
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+#header {
+  height: 150px;
+}
+#header-logo {
+  background-color: #f5f6fa;
+  border: 1px solid red;
+}
+#header-logo h1 {
+  font-family: Cursive;
+  margin-left: 10px;
+  line-height: 100px;
+}
+#header-logo span {
+  background-color: #ea2027;
+  border-radius: 10px 5px;
+  color: #fff;
+}
+/* end header logo */
+/* begin header-nav*/
+#header-nav {
+  /* display: block; */
+  margin: 5px 0px;
+  background-color: #f5f6fa;
+  border: 1px solid red;
+  height: 40px;
+  text-align: center;
+}
+
+#header-nav li {
+  display: inline-block;
+}
+#header-nav li a {
+  color: black;
+  padding: 0 30px;
+  border-left: 2px solid #000;
+  /* height: 100%; */
+  line-height: 40px;
+}
+#header-nav li:hover {
+  background-color: #bdc3c7;
+}
+/* end header-nav */
+
+/* begin content */
+#content {
+  margin-top: 10px;
+  /* margin-top: 100px; */
+}
+#content .content-left {
+  width: 40%;
+  text-align: center;
+  float: left;
+
+  border: 10px solid #f5f6fa;
+}
+#content .content-left iframe {
+  width: 100%;
+}
+#content .content-left .content-left-title {
+  padding: 20px 0;
+}
+
+#content .content-right {
+  float: left;
+  /* border: 20px solid red; */
+
+  width: 60%;
+}
+#content .content-right iframe {
+  margin: 10px 10px;
+  width: 90%;
+}
+#content .content-right .content-right-title {
+  margin: 20px 20px;
+}
+#content .content-right .content-right-content {
+  padding: 2px 10px;
+
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* end content */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#footer {
+  margin-top: auto;
+  height: 30px;
+  background-color: #bdc3c7;
+}

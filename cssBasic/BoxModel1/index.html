@@ -4,72 +4,55 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Tạo BoxModel 1</title>
-	<!-- <link rel="stylesheet" href="/css/style.css"> -->
 	<style>
 		* {
-			font-family: Helvetica, sans-serif;
-			font-size: 16px;
-			line-height: 1.6;
 			text-align: center;
+			line-height: 1.6;
 			box-sizing: border-box;
 		}
 
 		/* Layout */
-		.learning {
-			margin: 30px auto;
-		}
-
 		header {
-			font-family: Cursive;
+
 			background-color: #dff9fb;
 			border-radius: 5px 20px 5px 20px;
 			padding: 10px;
-			margin: 0px;
+
 		}
 
-
-		.text-title {
+		header p {
 			color: #000000;
 			font-size: 2rem;
 		}
 
-		h1 {
+		main {
+			width: 100%;
+			margin-top: 20px;
+			padding: 40px;
+			border: 25px solid rgb(9, 125, 40)
+		}
+
+		main h1 {
 			font-size: 2.5rem;
 			background-color: rgb(207, 211, 207);
-			/* padding: 25px 50px; */
 			width: 60%;
 			margin: auto;
 			font-weight: bold;
 			color: rgb(7, 100, 20);
 		}
-
-		.box-model {
-			width: 100%;
-			margin-top: 20px;
-			padding: 90px;
-			border: 25px solid rgb(9, 125, 40)
-		}
 	</style>
 </head>
 
 <body>
+	<header>
+		<p>Phạm Thị Thương <br>Lớp: BW2303R1<br> Tạo Box Model hiển thị màu </p>
+	</header>
 
-	<div class="learning ">
+	<main>
+		<h1>Web <br>Programming</h1>
+	</main>
 
-		<div class="photo">
-			<p class="text-title">Phạm Thị Thương <br>Lớp: BW2303R1<br> Tạo Box Model hiển thị màu </p>
-		</div>
-
-		<div class="box-model">
-			<h1>Web <br>Programming</h1>
-		</div>
-
-
-	</div>
-
-
-
-
+	<footer></footer>
 </body>
 
 </html>

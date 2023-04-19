@@ -4,155 +4,91 @@
 <head>
     <meta charset="utf-8" />
     <title>Tạo Form Sở Thích</title>
-    <style>
-        body {
-
-            font-family: Helvetica, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        /* Layout */
-        .learning {
-            margin: 30px auto;
-            width: 1050px;
-
-
-        }
-
-        .photo {
-            font-family: Cursive;
-            background-image: linear-gradient(to right, rgb(213, 179, 229), rgba(217, 20, 204, 1));
-            border-radius: 5px 20px 5px 20px;
-            padding: 10px;
-            margin-right: 30px;
-
-        }
-
-        .text-white {
-            color: #000000;
-            font-size: 2rem;
-
-        }
-
-
-
-        .form-group {
-            display: flex;
-            padding: 10px;
-            gap: 20px;
-        }
-
-        .check-box {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            gap: 10px;
-            text-align: left;
-        }
-
-        .lab {
-            color: rgb(62, 62, 237);
-            width: 100px;
-            text-align: right;
-        }
-
-        input[name=yourname] {
-            width: 20%;
-        }
-
-        input[type=text] {
-            font-size: 17px;
-        }
-
-        h2 {
-            background-color: rgba(239, 91, 28, 0.793);
-            padding: 2px;
-            width: 500px;
-            text-transform: uppercase;
-
-        }
-
-        .button {
-            padding: 10px;
-            font-size: 1rem;
-            background-color: rgba(250, 235, 215, 0.739);
-        }
-
-        form {
-            margin-left: 270px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <section class="learning ">
-        <div class="photo">
-            <p class="text-white">Phạm Thị Thương <br>Lớp: BW2303R1 </p>
-        </div>
+    <header style="text-align: center;">
+        <h1>Phạm Thị Thương <br>Lớp: BW2303R1 </h1>
+        <hr>
+    </header>
 
-        <div>
+    <main>
+        <form action="#" method="post">
+            <table cellspacing="5" style="margin: auto;">
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h2>SỞ THÍCH CỦA BẠN</h2>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Họ và tên</td>
+                        <td colspan="2">
+                            <input type="text" name="fullname" size="30">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td colspan="2">
+                            <input type="email" name="email" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sở thích</td>
+                        <td colspan="2">
+                            <table cellspacing="10">
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="hobbies" value="sport">
+                                            Thể thao
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="hobbies" value="music">
+                                            Âm nhạc
+                                        </td>
+                                        <td>Đọc sách</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="hobbies" value="web">
+                                            Lướt web
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="hobbies" value="game">
+                                            Chơi game
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="hobbies" value="film">
+                                            Điện ảnh
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3">
+                                            <input type="checkbox" name="hobbies" value="motoring">
+                                            Du lịch
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2">
+                            <input type="submit" value="Gửi thông tin">
+                            <input type="reset" value="Nhập lại">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </main>
 
-
-            <form action="#" method="get">
-                <h2>
-                    Sở Thích Của Bạn
-                </h2>
-
-                <div class="form-group">
-                    <label class="lab">Họ Và Tên:</label>
-                    <input type="text" name="yourname">
-                </div>
-
-                <div class="form-group">
-                    <label class="lab">Email: </label>
-                    <input type="email" name="email">
-                </div>
-
-                <div class="form-group">
-                    <label class="lab">Sở Thích</label>
-
-                    <div class="check-box">
-                        <div class="check-box-1">
-                            <input type="checkbox" name="hobby">
-                            <label>Thể Thao</label>
-
-                            <input type="checkbox" name="hobby">
-                            <label>Âm nhạc</label>
-
-                            <input type="checkbox" name="hobby">
-                            <label>Đọc sách</label>
-                        </div>
-                        <div class="check-box-2">
-                            <input type="checkbox" name="hobby">
-                            <label>Lướt Web</label>
-
-                            <input type="checkbox" name="hobby">
-                            <label>Chơi game</label>
-
-                            <input type="checkbox" name="hobby">
-                            <label>Điện ảnh</label>
-
-                        </div>
-                        <div class="check-box-3">
-                            <input type="checkbox" name="hobby">
-                            <label>Du lịch</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="lab"></div>
-                    <div class="form-btn">
-                        <input class="button" type="submit" value="Gửi thông tin">
-                        <input class="button" type="reset" value="Nhập lại">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-
+    <footer></footer>
 
 </body>
 

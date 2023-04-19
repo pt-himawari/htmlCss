@@ -4,153 +4,77 @@
 <head>
     <meta charset="utf-8" />
     <title>Tạo Form Đăng Kí Học Viên</title>
-    <style>
-        body {
 
-            font-family: Helvetica, sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        /* Layout */
-        .learning {
-            margin: 30px auto;
-            width: 1050px;
-
-
-        }
-
-        .photo {
-            font-family: Cursive;
-            background-image: linear-gradient(to right, rgb(213, 179, 229), rgba(217, 20, 204, 1));
-            border-radius: 5px 20px 5px 20px;
-            padding: 10px;
-            margin-right: 30px;
-
-        }
-
-        .text-white {
-            color: #000000;
-            font-size: 2rem;
-
-        }
-
-
-
-        .form-group {
-            display: flex;
-
-            padding: 10px;
-            gap: 20px;
-        }
-
-
-
-        .lab {
-            color: rgb(62, 62, 237);
-            width: 100px;
-            text-align: right;
-        }
-
-        input[name=yourname] {
-            width: 20%;
-        }
-
-        input[type=text] {
-            font-size: 17px;
-        }
-
-        h2 {
-            background-color: rgba(159, 249, 234, 0.793);
-            padding: 2px;
-            text-transform: uppercase;
-
-            width: 500px;
-
-        }
-
-        .button {
-            padding: 10px;
-            font-size: 1rem;
-            background-color: rgb(212, 217, 219);
-        }
-
-        form {
-            background-color: rgb(240, 239, 160);
-            width: 504px;
-            margin-left: 270px;
-        }
-    </style>
 </head>
 
 <body>
 
-    <section class="learning ">
-        <div class="photo">
-            <p class="text-white">Phạm Thị Thương <br>Lớp: BW2303R1 </p>
-        </div>
 
-        <div>
+    <header style="text-align: center;">
+        <h1>Phạm Thị Thương <br>Lớp: BW2303R1 </h1>
+        <hr>
+    </header>
 
+    <main>
+        <h2 style="text-align: center;">Đăng kí học viên</h2>
+        <form action="#" method="get">
+            <table style="margin:auto;">
+                <tr height="50px">
 
-            <form action="#" method="get">
-                <h2>
-                    Đăng kí học viên
-                </h2>
-                <div class="form-group">
-                    <label class="lab">Họ Và Tên</label>
-                    <input type="text" name="yourname">
-                </div>
-                <div class="form-group">
-                    <label class="lab">Ngày sinh </label>
-                    <input type="text" name="dateBirth">
-                </div>
-                <div class="form-group">
-                    <label class="lab">Giới Tính </label>
-                    <div>
+                    <td><label for="yourname">Họ Và Tên : </label></td>
+
+                    <td> <input id="yourname" type="text" name="yourname"> </td>
+                </tr>
+                <tr>
+                    <td><label for="dateBirth">Ngày sinh </label></td>
+                    <td> <input id="dateBirth" type="text" name="dateBirth"></td>
+                </tr>
+                <tr height="50px">
+                    <td> <label>Giới Tính </label></td>
+                    <td>
                         <input type="radio" value="male" name="gender">
                         <label>Nam</label>
                         <input type="radio" value="female" name="gender">
                         <label>Nữ</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="lab">Địa Chỉ </label>
-                    <input type="text" name="add">
-                </div>
-                <div class="form-group">
-                    <label class="lab">lớp </label>
-                    <select name="lop">
+                    </td>
+                </tr>
+                <tr height="50px">
+                    <td><label>Địa Chỉ </label></td>
 
-                        <option value="">-- Chọn lớp--</option>
-                        <option value="javaScript">Lập Trình javaScript</option>
-                        <option value="php">Lập Trình Web PHP</option>
-                        <option value="java">Lập Trình Hướng Đối Tượng Java</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label class="lab">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label class="lab">Điện thoại</label>
-                    <input type="text" name="phone">
-                </div>
+                    <td><input type="text" name="add"></td>
+                </tr>
+                <tr>
+                    <td><label>lớp </label></td>
 
+                    <td>
+                        <select name="lop">
+                            <option value="">-- Chọn lớp--</option>
+                            <option value="javaScript">Lập Trình javaScript</option>
+                            <option value="php">Lập Trình Web PHP</option>
+                            <option value="java">Lập Trình Hướng Đối Tượng Java</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr height="50px">
+                    <td> <label>Email</label></td>
+                    <td><input type="email" name="email"></td>
 
-                <div class="form-group">
-                    <div class="lab"></div>
-                    <div>
-                        <input class="button" type="submit" value="Đăng Kí">
-                        <input class="button" type="reset" value="Nhập lại">
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
+                </tr>
+                <tr height="50px">
+                    <td> <label>Điện thoại</label></td>
+                    <td><input type="text" name="phone"></td>
 
+                </tr>
+                <tr>
+                    <td> <input type="submit" value="Đăng Kí"> </td>
+                    <td><input type="reset" value="Nhập lại"></td>
 
+                </tr>
+            </table>
+
+        </form>
+    </main>
+    <footer></footer>
 
 
 </body>

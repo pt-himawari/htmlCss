@@ -97,10 +97,10 @@ main {
   margin-top: 60px;
 }
 main .content-ads,
-main .slide-menu {
+main .slider-menu {
   background-color: #ccc;
 }
-/* main left - menu link */
+/* slide menu link */
 main .content-ads,
 main .menu-nav {
   padding: 20px 0px;
@@ -142,8 +142,15 @@ footer {
 }
 /*  hiden class */
 /* the mobile show */
-.menu-bar-mb {
+
+.icon-menu {
   display: none;
+}
+.login {
+  /* background-color: aquamarine; */
+  text-align: right;
+  padding-right: 20px;
+  float: right;
 }
 /* tablets */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
@@ -189,59 +196,49 @@ footer {
   [class*="col-"] {
     width: 100%;
   }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-6 {
+    width: 50%;
+  }
+
   /* to pc hinden class  */
   main .menu-nav {
     display: none;
   }
-  nav {
+  nav ul {
     display: none;
   }
+
   main .content-ads {
     height: auto;
   }
-
-  .login {
-    text-align: right;
-    padding-right: 20px;
-    float: right;
+  nav li {
+    /* display: none; */
+    background-color: #34495e;
+    width: 50%;
+    display: block;
   }
-  .menu-bar-mb {
-    position: relative;
-    padding-left: 30px;
-    display: inline-block;
-  }
-
-  .sub {
+  nav ul {
+    /* background-color: aqua; */
     position: absolute;
+
     top: 61px;
-    background-color: #34495e;
-    left: 20px;
-    border-radius: 5px;
-    display: none;
+    left: 10px;
   }
-  .sub-link {
-    position: absolute;
-    background-color: #34495e;
-    left: 86px;
-    top: 205px;
-    display: none;
+  .icon-menu {
+    margin: 16px 15px;
+    display: inline;
+    width: 30px;
+    height: 30px;
   }
-  .sub li {
-    display: block;
+  .icon-menu:hover {
+    opacity: 0.3;
   }
-  .sub li:hover {
-    background-color: #ccc;
-  }
-  .menu-bar-mb .icon-menu {
-    margin-top: 20px;
-  }
-
-  .menu-bar-mb:hover .sub {
-    color: #34495e;
-    display: block;
-    cursor: pointer;
-  }
-  .sub li:hover .sub-link {
+  .menu:hover nav ul {
     display: block;
   }
 }

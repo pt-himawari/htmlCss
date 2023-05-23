@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo Layout CSS Grid</title>
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+
+    body {
+      text-align: center;
+      background-color: #000;
+      padding: 30px;
+
+    }
+
+    .container {
+      display: grid;
+      align-content: center;
+      grid-template-columns: 2fr 1fr;
+      /* grid-template-rows: 100px 70vh 100px; */
+      gap: 5px;
+    }
+
+    .grid-item-footer,
+    .grid-item-header {
+      grid-column: 1/-1;
+      padding: 3rem;
+      background-color: #9b215b;
+
+    }
+
+    .grid-item-sidebar {
+      grid-column: 2/3;
+      background-color: #7aa237;
+    }
+
+    .grid-item-content {
+      grid-column: 1/2;
+      grid-row: 2;
+      padding: 20rem 0;
+      background-color: #2b5e71;
+
+    }
+
+    [class*="grid-item"] {
+      display: grid;
+      align-content: center;
+      color: #fff;
+      border: 3px dashed #fff;
+      font-size: 3rem;
+    }
+
+    .grid-item-footer {
+      background-color: #978d2e;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      .grid-col-1 {
+        display: block;
+      }
+
+      .grid-item-sidebar {
+        background-color: #7aa237;
+      }
+
+      [class*="grid-item"] {
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container  grid-col-1">
+
+    <header class="grid-item-header">title</header>
+    <aside class="grid-item-sidebar">aside</aside>
+    <section class="grid-item-content">content</section>
+    <footer class="grid-item-footer">footer</footer>
+
+  </div>
+</body>
+
+</html>

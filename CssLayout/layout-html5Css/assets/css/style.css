@@ -38,7 +38,7 @@ li:hover {
   display: inline-block;
 }
 .sub-nav {
-  width: 100px;
+  /* width: 100px; */
 
   position: absolute;
   top: 61px;

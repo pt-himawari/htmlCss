@@ -79,7 +79,7 @@ i {
   padding-right: 1.3rem;
 }
 footer a:hover {
-  color: #4cd137;
+  color: #32ff7e;
   font-weight: bolder;
   letter-spacing: 0.2rem;
 }
@@ -106,10 +106,10 @@ footer a:hover {
   }
   footer .infor:nth-child(2) a {
     display: inline-block;
-    padding: 0px 1.5rem;
+    padding: 0 1.5rem;
   }
 }
-/* mobile <767*/
+/* mobile <500*/
 @media screen and (max-width: 500px) {
   [class*="col-"] {
     width: 100%;

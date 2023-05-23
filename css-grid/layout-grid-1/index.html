@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tạo Layout CSS Grid</title>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      grid-template-rows: 100px 60vh 100px;
+      grid-template-areas:
+        'h  h h'
+        'nav mct sd'
+        'f f f';
+    }
+
+    .grid-item-header {
+      background-color: #3867d6;
+      grid-area: h;
+      line-height: 100px;
+
+    }
+
+    .grid-item-nav {
+      grid-area: nav;
+      background-color: #45aaf2;
+      line-height: 60vh;
+    }
+
+    .grid-item-maincontent {
+      grid-area: mct;
+      background-color: #d1d8e0;
+
+      line-height: 60vh;
+    }
+
+    .grid-item-sidebar {
+      grid-area: sd;
+      background-color: #45aaf2;
+
+      line-height: 60vh;
+    }
+
+    .grid-item-footer {
+      line-height: 100px;
+
+      grid-area: f;
+      background-color: #3867d6;
+
+
+    }
+
+    [class*="grid-item"] {
+      color: #fff;
+      border: 2.5px solid #fff;
+      /* padding: 100px; */
+      font-size: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="grid-item-header">Header</header>
+    <nav class="grid-item-nav">NAV</nav>
+    <div class="grid-item-maincontent">Main Content</div>
+    <div class="grid-item-sidebar">Sidebar</div>
+    <div class="grid-item-footer">Footer</div>
+  </div>
+</body>
+
+</html>

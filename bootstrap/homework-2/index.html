@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>homework-1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+
+      background-size: cover;
+      background-repeat: none;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.6)), url("love_pics.jpg");
+    }
+
+    i {
+      /* width: 30px;
+      height: 30px;
+      font-size: 25px; */
+
+    }
+
+    input::placeholder {
+      color: white;
+      background: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container text-center  ">
+    <div class="row">
+      <header class="text-uppercase my-5">
+        <h1 class="text-uppercase text-light">clean login form</h1>
+      </header>
+      <main class="d-flex justify-content-center">
+        <form class="px-5 py-3 d-flex flex-column bg-black text-dark bg-opacity-75 rounded">
+          <h1 class="text-white mb-4 mt-3">Login Now</h1>
+          <div class="mb-3">
+
+            <div class="w-100 px-2 py-1 d-flex bg-black text-dark bg-opacity-10 border align-items-center">
+              <input type="text" class="w-100 bg-black text-dark bg-opacity-10  border-0 text-white"
+                placeholder="Username" id="inputEmail3" />
+              <i class="fa text-white fa-user icon bg-black text-dark bg-opacity-10"></i>
+            </div>
+
+
+          </div>
+          <div class="mb-3">
+            <div class="form-row">
+              <div class="form-holder">
+                <input type="password" class="form-control" placeholder="Password">
+                <i class="zmdi zmdi-lock-open small"></i>
+              </div>
+            </div>
+
+            <div class="w-100 px-2 py-1 d-flex bg-black text-dark bg-opacity-10 border align-items-center">
+              <input type="password" class="w-100 bg-black text-dark bg-opacity-10  border-0 text-white   "
+                placeholder="Password" id="inputEmail3" />
+
+              <i class="fas fa-unlock text-white bg-black text-dark bg-opacity-10"></i>
+            </div>
+
+          </div>
+          <div class="d-flex gap-4">
+            <p class="text-white">
+              Forgot Password?
+              <a href="#" class="text-success text-decoration-none">Click here</a>
+            </p>
+            <p class="text-white">
+              New User?
+              <a href="#" class="text-success text-decoration-none">Registeer here</a>
+            </p>
+          </div>
+          <button type="submit" class="w-25  btn btn-light text-dark align-self-center">
+            Login
+          </button>
+
+          <div class="d-flex mt-4 ">
+            <p class="text-white">Or login with </p>
+
+            <div class="d-flex ms-2 gap-1">
+              <a href="#" class="text-decoration-none">
+                <i class="fa-brands fa-facebook-f text-bg-primary  p-2"></i>
+                <i class="fa-brands fa-twitter text-bg-primary p-2"></i>
+                <i class="fa-brands fa-pinterest text-bg-danger p-2"></i>
+                <i class="fa-brands fa-github text-bg-primary p-2"></i>
+              </a>
+
+
+            </div>
+          </div>
+        </form>
+      </main>
+      <footer>
+        <h6 class="text-light mt-5">
+          2017 Clearn Login form.All rights reserved | Design
+          <a href="#" class="text-success text-decoration-none"> W3layouts</a>
+        </h6>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

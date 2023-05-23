@@ -1,0 +1,19 @@
+.carousel-inner {
+  overflow: unset;
+}
+header > nav {
+  z-index: 1000;
+}
+main a:hover,
+header a:hover {
+  border-bottom: 2px solid #000;
+}
+.dropdown-menu a:hover {
+  background-color: #000;
+  color: #eee;
+  border-bottom: none;
+}
+footer a:hover {
+  text-decoration: underline solid #000;
+  /* text-decoration: ; */
+}

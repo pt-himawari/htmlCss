@@ -1,0 +1,22 @@
+:root {
+    --bggradient: #ecf4fe;
+    --bggrablue: linear-gradient(90deg, #348aff, #70acff);
+}
+body {
+    background-color: var(--bggradient);
+}
+.fs-9 {
+    font-size: 380%;
+}
+.container-lg .row .col .image_teamwork {
+    z-index: 1;
+    position: relative;
+}
+.container-lg .row .col .video_learn {
+    background-color: #ecf4fe;
+    left: -3rem;
+    bottom: -3rem;
+}
+.contact-join {
+    background: var(--bggrablue);
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>CSS Grid</title>
+</head>
+
+
+<body>
+	<header>
+		<h1>CSS Grid</h1>
+		<h3>Team 2 : Phạm Thị Thương - Hoàng Công Tiến - Nguyễn Tuấn Anh</h3>
+
+	</header>
+	<main>
+
+
+		<div class="grid-value-title">
+			<!--grid-template-columns : values  -->
+
+			<label for="for-col-auto">grid-template-columns: auto auto auto; </label><br />
+			<label for="for-col-length">grid-template-columns(length): 100px 200px 150px; </label><br />
+			<label for="for-col-percent"> grid-template-columns(length): 20% 30% 40%; </label><br />
+			<label for="for-maxmin-content">grid-template-columns: max-content | min-content;</label><br />
+		</div>
+
+		<div class="show-grid">
+			<!--  references input-->
+			<input type="radio" hidden class="col-auto-check" id="for-col-auto" name="check">
+			<input type="radio" hidden class="col-length-check" id="for-col-length" name="check">
+			<input type="radio" hidden class="col-percent-check" id="for-col-percent" name="check">
+			<input type="radio" hidden class="maxmin-content-check" id="for-maxmin-content" name="check">
+
+			<!-- show container -->
+			<div class="grid-container col-auto-show col-length-show  col-percent-show maxmin-content-show">
+				<!-- item 1 -->
+				<div class="grid-item">
+
+					<p class="auto-value">auto</p>
+
+					<p class="lengt-value">100px</p>
+
+					<p class="percent-value">20%</p>
+
+					<p class="maxmin-content-value">max-content</p>
+
+
+				</div>
+
+				<!-- item 2 -->
+
+				<div class="grid-item">
+
+					<p class="auto-value">auto</p>
+
+					<p class="lengt-value">200px</p>
+
+					<p class="percent-value">30%</p>
+
+					<p class="maxmin-content-value">min-content</p>
+
+				</div>
+
+				<!-- item 3 -->
+
+				<div class="grid-item">
+
+					<p class="auto-value">auto</p>
+
+					<p class="lengt-value">150px</p>
+
+					<p class="percent-value">40%</p>
+
+					<p class="maxmin-content-value">max-content</p>
+				</div>
+				<div class="grid-item">12</div>
+				<div class="grid-item">13</div>
+				<div class="grid-item">140000000000000000000000000000000</div>
+				<div class="grid-item">15</div>
+				<div class="grid-item">16</div>
+				<div class="grid-item">17</div>
+			</div>
+
+
+			<!--  <input type="radio" hidden class="tempalte-col-length-check" id="tempalte-col-length" name="check">
+      <div class="grid-container tempalte-col-length">
+        <div class="lengt-value">100px</div>
+        <div class="lengt-value">200px</div>
+        <div class="lengt-value">150px</div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+
+
+      <input type="radio" hidden class="tempalte-col-percent-check" id="tempalte-col-percent" name="check">
+      <div class="grid-container tempalte-col-percent">
+        <p class="percent-show">20%</p>
+        <p class="percent-show">30%</p>
+        <p class="percent-show">40%</p>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div>
+
+
+      <input type="radio" hidden class="tempalte-col-maxmin-content-check" id="tempalte-col-maxmin-content" name="check">
+      <div class="grid-container tempalte-col-maxmin-content">
+        <p class="maxmin-content-value">max-content</p>
+        <p class="maxmin-content-value">min-content</p>
+        <p class="maxmin-content-value">max-content</p>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+      </div> -->
+
+
+		</div>
+	</main>
+
+</body>
+
+</html>
